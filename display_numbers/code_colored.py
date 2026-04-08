@@ -9,7 +9,7 @@ import os
 # Shared data
 values = [0] * 6
 
-# -------- TASK FUNCTION --------
+# TASK FUNCTION 
 def task(index, lb, ub, refresh_time, run_time):
     start = time.time()
 
@@ -17,7 +17,7 @@ def task(index, lb, ub, refresh_time, run_time):
         values[index] = random.randint(lb, ub)
         time.sleep(refresh_time)
 
-# -------- DISPLAY FUNCTION --------
+# DISPLAY FUNCTION 
 def display(run_time):
     start = time.time()
 
@@ -42,7 +42,7 @@ def display(run_time):
 
     print("\nProgram finished after 60 seconds.")
 
-# -------- MAIN --------
+#  MAIN 
 if __name__ == "__main__":
 
     run_time = 60

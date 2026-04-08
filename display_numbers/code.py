@@ -6,13 +6,13 @@ import os
 # Shared data (6 positions)
 values = [0] * 6
 
-# -------- TASK FUNCTION --------
+# TASK FUNCTION 
 def task(index, lb, ub, refresh_time):
     while True:
         values[index] = random.randint(lb, ub)
         time.sleep(refresh_time)
 
-# -------- DISPLAY FUNCTION --------
+# DISPLAY FUNCTION 
 def display():
     while True:
         os.system('cls' if os.name == 'nt' else 'clear')  # clear screen
@@ -30,7 +30,7 @@ def display():
 
         time.sleep(1)  # refresh screen every second
 
-# -------- MAIN --------
+#  MAIN 
 if __name__ == "__main__":
 
     # Create 6 threads
